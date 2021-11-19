@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let num = +prompt('Nhap so phan tu cua mang');
+    let array = new Array(num);
+    let count = 0;
+    for (let i = 0; i < array.length; i++){
+        array[i] = +prompt('nhap phan tu thu i: ' + i);
+        array.push();
+        console.log(array);
+    }
+        for( j = 0; j < array.length; j++)
+        if (array[j] % 3 === 0) {
+            count++;
+            alert("so phan tu chia het cho 3 la:" + count);
+        } else {
+            alert(" -1 ");
+        }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1 id="in3">C1021H1</h1>-->
+<!--<p id="in5"><i>HelloWorld</i></p>-->
+<!--<p id="in0"><b>CodeGym</b></p>-->
+<script>
+    let num = +prompt('nhap so phan tu cua mang')
+    let array = new Array(num)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt('nhap vao phan tu thu ' + i )
+    }
+    let number = array[i] ;
+    let count3 = 0 ;
+    let count5 = 0 ;
+    let count0 = 0 ;
+    for (let i = 0; i < array.length; i++) {
+        if (i % 3 === 0){
+            count3++
+        } else if (i % 5 === 0 ){
+            count5++
+        } else if ( number % 3 !== 0 && number % 5 !== 0){
+            count0++
+        }
+    }
+
+    if (count3 > count5 && count3 > count0){
+        document.getElementById("in3").innerHTML = "<h1>C1021H1</h1>"
+    } else if (count5 > count3 && count5 > count0){
+        document.getElementById("in5").innerHTML = "<p><i>HelloWorld</i></p>-->"
+    }else if (count0> count3 && count0 > count5){
+        document.getElementById("in0").innerHTML = "<p><b>CodeGym</b></p>"
+    }
+
+</script>
+
+</body>
+</html>

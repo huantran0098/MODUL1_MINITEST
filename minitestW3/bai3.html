@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('nhap so phan tu cua mang')
+    let array = new Array(num)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt('nhap vao phan tu thu ' + i)
+    }
+
+    function isPrime(num) {
+        if (num < 2) {
+            return false
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+
+        }
+        return true;
+    }
+
+    for (j = 0; j < array.length; j++) {
+        let number = array[j]
+        if (isPrime(number) && (number < 200)) {
+            let sum = sum + number
+            alert("tong so nguyen to nho hon 200 la " + sum)
+        }
+    }
+
+
+</script>
+</body>
+</html>

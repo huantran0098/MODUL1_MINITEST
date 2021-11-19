@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('nhap so phan tu cua mang')
+    let array = new Array(num)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt('nhap vao phan tu thu ' + i )
+    }
+
+    let a = prompt('nhap phan tu can kiem tra')
+    for (let i = 0; i < array.length; i++) {
+        let count=0 ;
+        if (array.includes(a)){
+            count++
+        } else {
+            alert('khong co phan tu giong a trong mang ')
+        }
+        alert("so phan tu giong a la: " + count)
+    }
+
+</script>
+
+</body>
+</html>
